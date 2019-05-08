@@ -21,8 +21,8 @@
     "format": "prettier --write src/**/*.{js,json,css,md,scss}",
     "rmdist": "rimraf dist",
     "lint": "yarn run -s lint:scripts && yarn run -s lint:styles",
-    "lint:scripts": "eslint src/scripts",
-    "lint:styles": "stylelint \"resources/assets/styles/**/*.{css,sass,scss,sss,less}\"",
+    "lint:scripts": "eslint  src/scripts",
+    "lint:styles": "stylelint \"src/**/*.{css,sass,scss,sss,less}\"",
     "stylelint-check": "stylelint-config-prettier-check"
   },
   "dependencies": {
@@ -56,10 +56,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,scss}": [
+    "*.{js,json,css,md,scss},!(node_modules)/**/": [
       "prettier --config .prettierrc --write",
-      "eslint --fix",
       "stylelint --fix",
+      "eslint --fix",
       "git add"
     ]
   }
