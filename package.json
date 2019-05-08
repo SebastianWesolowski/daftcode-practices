@@ -1,0 +1,23 @@
+{
+  "name": "daftcode-practices",
+  "version": "0.0.0",
+  "description": "Solution of recruitment tasks for daftcode practices 2019",
+  "author": "Sebastian Wesołowski",
+  "license": "MIT",
+  "homepage": "https://github.com/sebastianwesolowski/daftcode-practices",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianwesolowski/daftcode-practices.git"
+  },
+  "keywords": [
+    "practices",
+    "daftcode",
+    "2019"
+  ],
+  "bugs": {
+    "url": "https://github.com/sebastianwesolowski/daftcode-practices/issues"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
