@@ -24,13 +24,13 @@
   "eslint.enable": true,
   "eslint.autoFixOnSave": true,
   "files.exclude": {
-    // "**/.git": true,
-    // "**/node_modules": true,
-    // "**/LICENSE": true,
-    // "**/yarn.lock": true,
-    // "**/.stylelintrc": true,
-    // "**/.prettierrc": true,
-    // "**/.eslintrc": true,
-    // "**/.editorconfig": true
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/LICENSE": true,
+    "**/yarn.lock": true,
+    "**/.stylelintrc": true,
+    "**/.prettierrc": true,
+    "**/.eslintrc": true,
+    "**/.editorconfig": true
   }
 }
