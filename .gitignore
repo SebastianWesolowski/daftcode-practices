@@ -3,6 +3,7 @@ node_modules
 
 # production
 build
+dist
 
 # misc
 .DS_Store
@@ -10,4 +11,3 @@ build
 yarn-error.log
 yarn.lock
 .yarnclean
-.vscode

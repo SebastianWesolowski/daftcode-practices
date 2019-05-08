@@ -1,0 +1,35 @@
+/**
+ * @section Base Styles
+ */
+
+body {
+	font-size: 125%;
+	margin: 0 auto;
+	max-width: 42em;
+	width: 88%;
+	@media only screen and (max-width: 600px) {
+		width: 88%;
+	}
+	@media only screen and (max-width: 200px) {
+		width: 838%;
+	}
+	@media only screen and (max-width: 300px) {
+		width: 81%;
+	}
+}
+
+input,
+textarea,
+select,
+button {
+	font: inherit;
+	@media only screen and (max-width: 600px) {
+		width: 88%;
+	}
+	@media only screen and (max-width: 200px) {
+		width: 838%;
+	}
+	@media only screen and (max-width: 300px) {
+		width: 81%;
+	}
+}

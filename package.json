@@ -7,7 +7,7 @@
   "homepage": "https://github.com/sebastianwesolowski/daftcode-practices",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebastianwesolowski/daftcode-practices.git"
+    "url": "https://github.com/sebastianwesolowski/daftcode-practices"
   },
   "keywords": [
     "practices",
@@ -17,7 +17,68 @@
   "bugs": {
     "url": "https://github.com/sebastianwesolowski/daftcode-practices/issues"
   },
-  "scripts": {},
-  "devDependencies": {},
-  "dependencies": {}
+  "scripts": {
+    "format": "prettier --write src/**/*.{js,json,css,md,scss}",
+    "rmbuild": "rimraf build",
+    "lint": "yarn run -s lint:scripts && yarn run -s lint:styles",
+    "lint:scripts": "eslint  src/scripts",
+    "lint:styles": "stylelint \"src/**/*.{css,sass,scss,sss,less}\"",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^2.17.2",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^9.0.0",
+    "stylelint-config-idiomatic-order": "^6.2.0",
+    "stylelint-config-prettier": "^5.0.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.6.0",
+    "browser-sync": "2.26.3",
+    "del": "3.0.0",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "6.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-cssnano": "2.1.3",
+    "gulp-flatmap": "1.0.2",
+    "gulp-header": "2.0.5",
+    "gulp-jshint": "2.1.0",
+    "gulp-optimize-js": "1.1.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sass": "4.0.2",
+    "gulp-svgmin": "2.1.0",
+    "gulp-terser": "1.1.7",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "jshint": "2.9.6",
+    "jshint-stylish": "2.2.1",
+    "lazypipe": "1.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,scss},!(node_modules)/**/": [
+      "prettier --config .prettierrc --write",
+      "stylelint --fix",
+      "eslint --fix",
+      "git add"
+    ]
+  }
 }
