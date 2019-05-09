@@ -15,18 +15,6 @@ a {
 
 .modal {
   position: relative;
-  &--open {
-    .modal__shadow {
-      display: flex;
-      background-color: $color01;
-      opacity: 0.5;
-    }
-
-    .modal__popup {
-      display: flex;
-      opacity: 1;
-    }
-  }
 
   &__shadow {
     position: fixed;
@@ -52,6 +40,19 @@ a {
     background-color: $color02;
     opacity: 0;
     transform: translate(-50%, -50%);
+  }
+
+  &--open & {
+    &__shadow {
+      display: flex;
+      background-color: $color01;
+      opacity: 0.5;
+    }
+
+    &__popup {
+      display: flex;
+      opacity: 1;
+    }
   }
 
   .button {
