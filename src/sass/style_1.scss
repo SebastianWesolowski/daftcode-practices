@@ -14,6 +14,11 @@
   padding: 15px 0;
   grid-gap: 15px;
   grid-template-rows: 1fr 1fr;
+
+  @include respond-to('medium') {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .sidebar {
@@ -23,6 +28,11 @@
 .main-content {
   display: grid;
   grid-gap: 15px;
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__item {
     background-color: $color03;
   }
