@@ -1,1 +1,43 @@
 @import 'components/reset';
+@import 'components/variable';
+
+.header,
+.footer {
+  height: 100px;
+  background-color: $color01;
+}
+
+.content-area {
+  display: grid;
+  height: calc(100vh - 200px);
+  min-height: 400px;
+  padding: 15px 0;
+  grid-gap: 15px;
+  grid-template-rows: 1fr 1fr;
+
+  @include respond-to('medium') {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.sidebar {
+  background-color: $color02;
+}
+
+.main-content {
+  display: grid;
+  grid-gap: 15px;
+
+  @include respond-to('small') {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include respond-to('large') {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__item {
+    background-color: $color03;
+  }
+}

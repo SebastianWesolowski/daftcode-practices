@@ -74,18 +74,18 @@ powinny odpowiednio się rozszerzać/zwężać
   Parametry layoutu:
 - odstępy między wszystkimi sekcjami: ​ **15px**
 - **header​** :
-  ○ tło: ​ **#1A1C**
+  ○ tło: ​ **#1A1C22**
   ○ wysokość: ​ **100px​** (zawsze)
   ○ szerokość: ​ **100%​** (zawsze)
 - **footer​** :
-  ○ tło: ​ **#1A1C**
+  ○ tło: ​ **#1A1C22**
   ○ wysokość: ​ **100px​** (zawsze)
   ○ szerokość: ​ **100%​** (zawsze)
 - **sidebar​** :
   ○ tło: ​ **#6C757D**
   ○ rozmiary jak w opisie powyżej
 - **content​** :
-  ○ tło: ​ **#343A**
+  ○ tło: ​ **#343A40**
   ○ rozmiary jak w opisie powyżej
 
 ### 2. Modal
