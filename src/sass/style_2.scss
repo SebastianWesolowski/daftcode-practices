@@ -1,1 +1,61 @@
+@import 'components/variable';
 @import 'components/reset';
+
+main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: $color04;
+}
+
+.modal {
+  position: relative;
+  &--open {
+    .modal__shadow {
+      display: flex;
+      background-color: $color01;
+      opacity: 0.5;
+    }
+
+    .modal__popup {
+      display: flex;
+      opacity: 1;
+    }
+  }
+
+  &__shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    opacity: 0;
+  }
+
+  &__popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+    background-color: $color02;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .button {
+    position: absolute;
+    right: 10px;
+  }
+}
