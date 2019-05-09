@@ -1,1 +1,16 @@
 @import 'components/reset';
+@import 'components/variable';
+
+.header,
+.footer {
+  height: 100px;
+  background-color: $color01;
+}
+
+.content-area {
+  display: grid;
+  height: calc(100vh - 230px);
+  min-height: 400px;
+  padding: 15px 0;
+  grid-gap: 15px;
+}
