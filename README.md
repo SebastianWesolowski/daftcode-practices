@@ -2,10 +2,16 @@
 
 Solution of recruitment tasks for daftcode practices 2019
 
+## information about structure:
+
+** ⚠️ Special Folder For fast Check task ⚠️ **
+only on branch: https://github.com/SebastianWesolowski/daftcode-practices/tree/daftcode
+
 ### Structure Project
 
 ```shell
 
+├── check_task                  # → ️⚠️ ️Special Folder For fast Check task
 ├── TODO                        # → Folder with document all task todo
 ├── gulpfile.js                 # → Gulp task for easy development
 ├── package.json                # → File with all dependency and decryption project
