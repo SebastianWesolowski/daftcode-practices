@@ -1,0 +1,234 @@
+/*!
+ * daftcode-practices v1.0.0
+ * Solution of recruitment tasks for daftcode practices 2019
+ * (c) 2019
+ * MIT License
+ * https://github.com/sebastianwesolowski/daftcode-practices
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* line 6, src/sass/components/_reset.scss */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+/* line 96, src/sass/components/_reset.scss */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 109, src/sass/components/_reset.scss */
+
+body {
+  line-height: 1;
+}
+
+/* line 112, src/sass/components/_reset.scss */
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 116, src/sass/components/_reset.scss */
+
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 120, src/sass/components/_reset.scss */
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* line 127, src/sass/components/_reset.scss */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 132, src/sass/components/_reset.scss */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** Collors */
+
+/** Mixin fom css trick */
+
+/* line 4, src/sass/style_1.scss */
+
+.header,
+.footer {
+  height: 100px;
+  background-color: #1a1c22;
+}
+
+/* line 10, src/sass/style_1.scss */
+
+.content-area {
+  display: grid;
+  height: calc(100vh - 200px);
+  min-height: 400px;
+  padding: 15px 0;
+  grid-gap: 15px;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* line 24, src/sass/style_1.scss */
+
+.sidebar {
+  background-color: #6c757d;
+}
+
+/* line 28, src/sass/style_1.scss */
+
+.main-content {
+  display: grid;
+  grid-gap: 15px;
+}
+
+/* line 40, src/sass/style_1.scss */
+
+.main-content__item {
+  background-color: #343a40;
+}
+
+@media (min-width: 600px) {
+  /* line 28, src/sass/style_1.scss */
+
+  .main-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  /* line 10, src/sass/style_1.scss */
+
+  .content-area {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 28, src/sass/style_1.scss */
+
+  .main-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

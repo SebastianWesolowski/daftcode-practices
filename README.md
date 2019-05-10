@@ -41,7 +41,7 @@ only on branch: https://github.com/SebastianWesolowski/daftcode-practices/tree/d
         └── index.html          # → Main file html with link to all task
 ```
 
-## If You need build dproject
+## If You need build project
 
 Quick Start:
 

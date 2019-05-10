@@ -1,0 +1,237 @@
+/*!
+ * daftcode-practices v1.0.0
+ * Solution of recruitment tasks for daftcode practices 2019
+ * (c) 2019
+ * MIT License
+ * https://github.com/sebastianwesolowski/daftcode-practices
+ */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* line 6, src/sass/components/_reset.scss */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+/* line 96, src/sass/components/_reset.scss */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 109, src/sass/components/_reset.scss */
+
+body {
+  line-height: 1;
+}
+
+/* line 112, src/sass/components/_reset.scss */
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 116, src/sass/components/_reset.scss */
+
+blockquote,
+q {
+  quotes: none;
+}
+
+/* line 120, src/sass/components/_reset.scss */
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* line 127, src/sass/components/_reset.scss */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 132, src/sass/components/_reset.scss */
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/** Collors */
+
+/** Mixin fom css trick */
+
+/* line 4, src/sass/style_3.scss */
+
+body {
+  margin: 15px;
+}
+
+/* line 7, src/sass/style_3.scss */
+
+.form {
+  display: grid;
+  margin-bottom: 15px;
+  grid-gap: 15px;
+  grid-template-columns: 90fr 10fr;
+}
+
+/* line 13, src/sass/style_3.scss */
+
+.form__input {
+  padding: 15px;
+  padding-left: 45px;
+  border: 1px solid #1a1c22;
+  background-image: url(search.svg);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  color: #1a1c22;
+  fill: #1a1c22;
+  font-size: 17px;
+}
+
+/* line 25, src/sass/style_3.scss */
+
+.form__search {
+  border: 1px solid #1a1c22;
+  background-color: #fff;
+}
+
+/* line 31, src/sass/style_3.scss */
+
+.table {
+  width: 100%;
+  border: 1px solid #1a1c22;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+/* line 36, src/sass/style_3.scss */
+
+.table__row {
+  border-bottom: 1px solid #1a1c22;
+  text-align: left;
+}
+
+/* line 39, src/sass/style_3.scss */
+
+.table__row--hide {
+  display: none;
+}
+
+/* line 43, src/sass/style_3.scss */
+
+.table__cell {
+  padding: 17px;
+  font-size: 17px;
+  text-align: left;
+}
