@@ -5,7 +5,7 @@ Solution of recruitment tasks for daftcode practices 2019
 ## information about structure:
 
 ** ⚠️ Special Folder For fast Check task ⚠️ **
-only on branch: https://github.com/SebastianWesolowski/daftcode-practices/tree/daftcode
+only on branch: https://github.com/SebastianWesolowski/daftcode-practices/tree/daftcode/check_task
 
 ### Structure Project
 
