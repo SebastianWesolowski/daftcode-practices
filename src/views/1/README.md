@@ -27,26 +27,26 @@ W razie wątpliwości, znaczenie będą miały takie szczegóły, jak:
 Plik: 1.html
 Zrealizuj następujący layout przy użyciu semantycznego HTMLa (5.0) oraz CSS
 
-![Daftup_test_for_beginners.jpg](Daftup_test_for_beginners.jpg)
+![Daftup_test_for_beginners.jpg](../../../TODO/Daftup_test_for_beginners.jpg)
 
 Layout powinien być responsywny, tzn. płynnie dostosowywać się do wszystkich
 rozmiarów ekranu zgodnie z zasadami:
 
 - poniżej szerokości 600px:
 
-![01.grid_480.png](01.grid_480.png)
+![01.grid_480.png](../../../TODO/01.grid_480.png)
 
 - od szerokości 600px (włącznie), a poniżej 900px:
 
-![01.grid_600.png](01.grid_600.png)
+![01.grid_600.png](../../../TODO/01.grid_600.png)
 
 - od szerokości 900px (włącznie), a poniżej 1200px:
 
-![01.grid_900.png](01.grid_900.png)
+![01.grid_900.png](../../../TODO/01.grid_900.png)
 
 - od szerokości 1200px (włącznie):
 
-![01.grid_1200.png](01.grid_1200.png)
+![01.grid_1200.png](../../../TODO/01.grid_1200.png)
 
 - pomiędzy tymi progami na wszystkich rozmiarach ekranu elementy layoutu
 
@@ -87,60 +87,3 @@ powinny odpowiednio się rozszerzać/zwężać
 - **content​** :
   ○ tło: ​ **#343A40**
   ○ rozmiary jak w opisie powyżej
-
-### 2. Modal
-
-Plik: 2.html
-
-Stwórz prosty modal (a.k.a. popup) otwierany przyciskiem. Zasady:
-
-- stwórz na stronie przycisk `<button class="button">` (koniecznie z klasą button)
-- po kliknięciu w ten button powinien otworzyć się modal , koniecznie z klasą
-  modal
-- całą stronę pod modalem powinna zakryć półprzezroczysta warstwa, która
-  uniemożliwia kliknięcie w stronę pod nią
-- na środku tej warstwy niech znajduje się modal z następującą zawartością:
-  - nawigacja z linkiem prowadzącym do strony "3.html"
-  - przycisk zamykający modal: `<button class="button">` (koniecznie z klasą
-    button)
-  - po kliknięciu na przycisk zamykający, modal powinien zniknąć
-
-Kryteria oceny:
-
-- przyciski oraz modal mają odpowiednie klasy
-- odpowiednie buttony otwierają/zamykają modal
-- półprzezroczysta warstwa nie pozwala kliknąć w button otwierający modal
-- wewnątrz modalu znajduje się nawigacja z linkiem do "3.html"
-
-### 3. Filtrowanie listy
-
-Plik: 3.html
-Stwórz tabelę oraz formularz, przy pomocy którego będzie można filtrować jej treść.
-Wymagania:
-
-- formularz
-  - pole `<input>`, do którego będzie wpisywana fraza filtrująca
-  - przycisk, po kliknięciu którego tablica będzie filtrowana
-  - filtrowanie powinno też nastąpić przy naciśnięciu Enter w trakcie
-    wpisywania frazy
-- tabela
-  - powinna zawierać następującą strukturę:
-
-|                          |
-| ------------------------ |
-| Walmart                  |
-| State Grid               |
-| Sinopec Group            |
-| China National Petroleum |
-| Royal Dutch Shell        |
-| Toyota Motor             |
-| Volkswagen               |
-| BP                       |
-| Exxon Mobil              |
-| Berkshire Hathaway       |
-
-- zasady filtrowania
-  - filtrowanie polega na pokazaniu tylko tych wierszy tabeli, w którychznajduje się wpisana fraza
-  - fraza może znajdować się w dowolnym miejscu wiersza (np. przy frazie“wol” słowo “rewolwer” powinno się pojawić)
-  - filtrowanie nie powinno rozróżniać wielkich i małych liter (np. przy frazie“Rew” słowo “rewolwer” powinno się pojawić i na odwrót: “rew”pokazuje “Rewolwer”)
-  - filtrowanie z pustym polem powinno pokazać wszystkie wiersze tabeli

@@ -35,7 +35,7 @@ var paths = {
     output: 'build/svg/',
   },
   copy: {
-    input: 'src/copy/**/*',
+    input: 'src/views/**/*',
     output: 'build/',
   },
   reload: './build/',

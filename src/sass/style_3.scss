@@ -1,0 +1,48 @@
+@import 'components/reset';
+@import 'components/variable';
+
+body {
+  margin: 15px;
+}
+.form {
+  display: grid;
+  margin-bottom: 15px;
+  grid-gap: 15px;
+  grid-template-columns: 90fr 10fr;
+
+  &__input {
+    padding: 15px;
+    padding-left: 45px;
+    border: 1px solid $color01;
+    background-image: url(./../svg/search.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    color: $color01;
+    fill: $color01;
+    font-size: 17px;
+  }
+
+  &__search {
+    border: 1px solid $color01;
+    background-color: #fff;
+  }
+}
+
+.table {
+  width: 100%;
+  border: 1px solid $color01;
+  border-collapse: collapse;
+  font-size: 18px;
+  &__row {
+    border-bottom: 1px solid $color01;
+    text-align: left;
+    &--hide {
+      display: none;
+    }
+  }
+  &__cell {
+    padding: 17px;
+    font-size: 17px;
+    text-align: left;
+  }
+}
