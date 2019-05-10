@@ -36,8 +36,8 @@ body {
   &__row {
     border-bottom: 1px solid $color01;
     text-align: left;
-    &:nth-child(even) {
-      background: $color05;
+    &--hide {
+      display: none;
     }
   }
   &__cell {
